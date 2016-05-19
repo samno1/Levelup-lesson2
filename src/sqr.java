@@ -6,26 +6,25 @@ import java.util.Scanner;
 public class sqr {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-        int i,j;
-        System.out.print("Enter size of box: 4 ");
-        int size = sc.nextInt();
+        System.out.println("wanna continue?( yes or no) : ");
+        Scanner input = new Scanner(System.in);
+        String  s1= input.next();
 
-        for (i=0; i < size; i++)
-        {
-            for (j=0; j < size; j++)
-            {
-                if ( (i == 0)    // First row
-                        || (i == size-1)   // Last row
-                        || (j == 0)    // First column
-                        || (j == size-1) )     // Last column
-                    System.out.print("*");  // Draw star
-                else
-                    System.out.print(" ");  // Draw space
-            }
-            System.out.println();
+        if (s1.equals("no")) {
+            System.out.println("sorry but there was something interesting for you");
         }
+        else if (s1.equals("yes")) {
+            System.out.println("cool let's start \n");
+            System.out.println("");
+            for (int i = 10; i<100; i++){
+               // for(int j=10;j<11;j++){
+                    System.out.print(" ");
+                    System.out.print(i);
+               // }
 
+            }
+        }
+        else System.out.println("haha, that's not yes or no !");
 
     }
 }

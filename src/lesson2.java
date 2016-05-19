@@ -20,7 +20,7 @@ public class lesson2 {
     public static void frame(){
         Scanner sc = new Scanner(System.in);
         int i, j;
-        System.out.print("Enter size of box (10 would be better !!):  ");
+        System.out.print("\n\nEnter size of box (8 or 10 would be better !!):  ");
         int size = sc.nextInt();
 
         for (i = 0; i < size; i++) {
@@ -41,7 +41,7 @@ public class lesson2 {
     public static void Equation(){
         Math.random();
         Scanner scan= new Scanner(System.in);
-        System.out.println("Inter equation parameters ax*x+bx+c=0 :");
+        System.out.println("Inter equation parameters ax*x+bx+c=0 :\n");
         System.out.print("a = ");
         double a =scan.nextDouble();
         System.out.print("b = ");
@@ -61,9 +61,11 @@ public class lesson2 {
             System.out.println("Dva kornyi \nx1= "+x1 );
             System.out.println("x2= "+x2);
         }
+        System.out.println("\n");
 
     }
     public static void exercice(){
+
         System.out.println("wanna continue?( yes or no) : ");
         Scanner input = new Scanner(System.in);
         String  s1= input.next();
@@ -71,12 +73,19 @@ public class lesson2 {
         if (s1.equals("no")) {
             System.out.println("sorry but there was something interesting for you");
         }
-        else if (s1.equals("yes")){
-            System.out.println("cool let's start ");
-            for (int i=0;i<=5; i++){
-                System.out.println("one day");
+        else if (s1.equals("yes")) {
+            System.out.println("cool let's start \n");
+            System.out.println("целые двухзначные положительные числа:\n");
+            for (int i = 10; i<100; i++){
+                // for(int j=10;j<11;j++){
+                System.out.print(" ");
+                System.out.print(i);
+                // }
+
             }
         }
+        else System.out.println("haha, that's not yes or no !");
+
 
     }
 }
