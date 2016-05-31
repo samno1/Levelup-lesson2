@@ -7,8 +7,7 @@ import java.util.Scanner;
  */
 public class PlusOuMoins {
     public static void main(String[]args) {
-        int nbr_secret;
-        int nbr_user;
+        int nbr_secret, nbr_user;
         Scanner scan = new Scanner(System.in);
         nbr_secret = (int) (Math.random() * 999)+1; //1-1000
         do {
