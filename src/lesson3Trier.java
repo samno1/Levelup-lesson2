@@ -4,8 +4,9 @@ import java.util.Scanner;
  * Created by sam on 18.05.16.
  */
 public class lesson3Trier {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args){
+
+
         int i=0,j=0;
         int arr1[]=new int[20];
         for (i=0;i<arr1.length;i++) {
