@@ -26,5 +26,20 @@ public class lesson3Trier {
         for (int k=0;k<arr1.length;k++) {
             System.out.print(" " + arr1[k]);
         }
+
+
+        for(i=0;i<arr1.length-1;i++) {
+            for (j = i + 1; j < arr1.length; j++) {
+                if (arr1[i] > arr1[j]) {
+                    int tmp = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = tmp;
+                }
+            }
+        }
+        System.out.println();
+        for (int k=0;k<arr1.length;k++) {
+            System.out.print(" " + arr1[k]);
+        }
     }
 }
